@@ -23,4 +23,10 @@ describe FizzBuzz do
     expect(fizz_buzz.arrayify).to eq expected
   end
 
+  it "prints an prints an array starting with 1 to input with BuzzFizz substituted at multiples of 3 and 5" do
+    fizz_buzz = FizzBuzz.new(15)
+    expected = [1 , 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fizz", 13, 14, "FizzBuzz"]
+
+    expect(fizz_buzz.arrayify).to eq expected
+  end
 end

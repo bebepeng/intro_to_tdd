@@ -10,6 +10,8 @@ class FizzBuzz
     x = 0
     arr.each do |num|
       case
+        when num % 3 == 0 && num % 5 == 0
+          arr[x] = "FizzBuzz"
         when num % 3 == 0
           arr[x] = "Fizz"
         when num % 5 == 0

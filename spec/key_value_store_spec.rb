@@ -17,4 +17,13 @@ describe KeyValueStore do
     expect(store.get_value("key1")).to eq expected
   end
 
+  it "deletes a key" do
+    store = KeyValueStore.new
+    store.add_to_store("key1", "value1")
+    store.delete_key("key1")
+    expected = nil
+
+    expect(store.get_value("key1")).to eq expected
+  end
+
 end

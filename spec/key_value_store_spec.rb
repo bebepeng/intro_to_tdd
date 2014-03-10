@@ -26,4 +26,13 @@ describe KeyValueStore do
     expect(store.get_value("key1")).to eq expected
   end
 
+  it "lists all of the keys in a store" do
+    store = KeyValueStore.new
+    store.add_to_store("key1", "value1")
+    store.add_to_store("key2", "value2")
+    expected = ["key1", "key2"]
+
+    expect(store.list_keys).to eq expected
+  end
+
 end

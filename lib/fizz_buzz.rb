@@ -6,6 +6,14 @@ class FizzBuzz
   end
 
   def arrayify
-    1.upto(@number).to_a
+    arr = 1.upto(@number).to_a
+    x=0
+    arr.each do |num|
+      case
+        when num % 3 ==0
+          arr[x]="Fizz"
+      end
+    x+=1
+    end
   end
 end

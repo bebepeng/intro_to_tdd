@@ -1,12 +1,10 @@
 class KeyValueStore
-  def initialize (key, value)
-    @key = key
-    @value = value
+  def initialize
     @keystore = Hash.new
   end
 
-  def add_to_store
-    @keystore[@key] = @value
+  def add_to_store(key, value)
+    @keystore[key] = value
     @keystore
   end
 

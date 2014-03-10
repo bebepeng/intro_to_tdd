@@ -8,4 +8,8 @@ class KeyValueStore
     @keystore
   end
 
+  def get_value(key)
+    @keystore[key]
+  end
+
 end

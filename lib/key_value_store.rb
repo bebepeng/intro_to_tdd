@@ -20,4 +20,8 @@ class KeyValueStore
     @keystore.keys
   end
 
+  def clear_store
+    @keystore.clear
+  end
+
 end

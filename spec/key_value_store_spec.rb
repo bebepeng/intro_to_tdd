@@ -35,4 +35,11 @@ describe KeyValueStore do
     expect(store.list_keys).to eq expected
   end
 
+  it "clears the entire store" do
+    store = KeyValueStore.new
+    store.add_to_store("key1", "value1")
+    expected = {}
+
+    expect(store.clear_store).to eq expected
+  end
 end

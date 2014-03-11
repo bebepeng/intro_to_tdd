@@ -1,5 +1,3 @@
-
-
 class FizzBuzz
   def initialize (number)
     @number = number
@@ -17,7 +15,7 @@ class FizzBuzz
         when num % 5 == 0
           arr[x] = "Buzz"
       end
-    x += 1
+      x += 1
     end
   end
 end

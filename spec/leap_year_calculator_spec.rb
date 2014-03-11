@@ -11,4 +11,10 @@ describe LeapYearCalculator do
     year = LeapYearCalculator.new
     expect(year.yes?(1999)).to eq false
   end
+
+  it "tells me it is false if the year is only divisible by 100 and not by 400" do
+    year = LeapYearCalculator.new
+    expect(year.yes?(1900)).to eq false
+  end
+
 end

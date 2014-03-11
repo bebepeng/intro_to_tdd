@@ -3,10 +3,10 @@ require 'odd_even'
 
 describe OddEven do
 
-  it "returns array with even numbers replaced with the word even" do
+  it "replaces numbers with even and odd" do
     odd_even = OddEven.new(10)
 
-    expected = [1, "Even", 3, "Even", 5, "Even", 7, "Even", 9, "Even"]
+    expected = ["Odd", "Even", "Odd", "Even", "Odd", "Even", "Odd", "Even", "Odd", "Even"]
     expect(odd_even.run).to eq expected
   end
 end

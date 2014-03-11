@@ -32,4 +32,11 @@ describe NumericCalculator do
 
     expect(calc.get).to eq expectation
   end
+
+  it "defaults memory to zero before anything is called" do
+    calc = NumericCalculator.new
+    expectation = 0
+
+    expect(calc.get).to eq expectation
+  end
 end

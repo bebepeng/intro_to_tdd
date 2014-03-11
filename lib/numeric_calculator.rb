@@ -1,5 +1,7 @@
 class NumericCalculator
-  @saved = nil
+  def initialize
+    @saved = 0
+  end
 
   def add(num1, num2)
     num1 + num2

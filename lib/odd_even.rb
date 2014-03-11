@@ -4,6 +4,15 @@ class OddEven
   end
 
   def run
+    x = 0
+
+    @array_of_nums.each do |num|
+      if num % 2 == 0
+        @array_of_nums[x] = "Even"
+      end
+      x += 1
+    end
+
     @array_of_nums
   end
 end

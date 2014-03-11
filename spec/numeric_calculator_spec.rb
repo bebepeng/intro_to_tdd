@@ -23,4 +23,13 @@ describe NumericCalculator do
 
     expect(calc.get).to eq expectation
   end
+
+  it "clears the saved value" do
+    calc = NumericCalculator.new
+    calc.save(1020)
+    calc.clear
+    expectation = 0
+
+    expect(calc.get).to eq expectation
+  end
 end
